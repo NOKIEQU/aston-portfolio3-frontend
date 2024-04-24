@@ -10,7 +10,7 @@ const Projects = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:3000/projects');
+        const response = await fetch('http://142.93.46.22:3000/projects');
         if (!response.ok) {
           throw new Error('Failed to fetch projects');
         }
@@ -75,7 +75,7 @@ const SearchProjects = () => {
     setError('');
 
     try {
-      const response = await fetch('http://localhost:3000/search', {
+      const response = await fetch('http://142.93.46.22:3000/search', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

@@ -33,7 +33,7 @@ const EditProject = ({project}) => {
     const userId = localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')).uid : '';
 
     try {
-      const response = await fetch('http://localhost:3000/edit', {
+      const response = await fetch('http://142.93.46.22:3000/edit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

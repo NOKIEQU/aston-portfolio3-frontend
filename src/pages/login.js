@@ -9,13 +9,13 @@ const LoginPage = () => {
 
     const handleLogin = async () => {
         try {
-            const response = await fetch('http://localhost:3000/login', {
+            const response = await fetch('http://142.93.46.22:3000/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Access-Control-Allow-Origin':'*'
+                    
                 },
-                mode: 'cors',
+                
                 body: JSON.stringify({
                     "email": username,
                     "password": password

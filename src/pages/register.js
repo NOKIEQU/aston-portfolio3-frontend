@@ -12,7 +12,7 @@ const RegisterPage = () => {
 
     const handleLogin = async () => {
         try {
-            const response = await fetch('http://localhost:3000/register', {
+            const response = await fetch('http://142.93.46.22:3000/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
